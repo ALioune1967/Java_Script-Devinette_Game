@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+let hasard= Math.floor(Math.random() * 100) + 1;
+let hasard2= Math.floor(Math.random() * (500-101)) + 101;
+let hasard3= Math.floor(Math.random() * (1000-501)) + 501;
+
+console.log(hasard)
+console.log(hasard2)
+console.log(hasard3)
+
+for(var i = 1; i < 6; i++){
+                var valeur_saisi = prompt("Veuillez saisir une valeur comprise entre 0 et 100 \n\n Vous avez 5 tentatives");
+                
+                if (valeur_saisi == hasard){
+                    alert("Félicitation vous avez réussi, la réponse est bien " + hasard +"\n\n Passer au niveau 2");
+                    console.log("Félicitation vous avez réussi, la réponse est bien" + hasard +"passer au niveau 2" );
+                    
+
+                    for(var j = 1; j < 6; j++){
+                        var valeur_saisi = prompt("Veuillez saisir une valeur comprise entre 101 et 500 \n\n Vous avez 5 tentatives");
+                            
+                            if (valeur_saisi == hasard2){
+                                alert("Félicitation vous avez réussi, la réponse est bien " + hasard2 +"\n\n Passer au niveau 3");
+                                console.log("Félicitation vous avez réussi, la réponse est bien" + hasard2 +"passer au niveau 3" );
+                            
+                                
+
+                                for(var k = 1; k < 6; k++){
+                        var valeur_saisi = prompt("Veuillez saisir une valeur comprise entre 501 et 1000 \n\n Vous avez 5 tentatives");
+                            
+                            if (valeur_saisi == hasard3){
+                                alert("Félicitation vous avez réussi, la réponse est bien " + hasard3 +"\n\n Vous êtes Un CHAMPION");
+                                console.log("Félicitation vous avez réussi, la réponse est bien" + hasard3 );
+                                
+                                
+                                
+                            }else
+                            {
+                                for(var k = 1; k < 6; k++){
+                                    if(valeur_saisi < hasard3)
+                                {
+                                    alert("Le nombre que vous avez saisi est trop petit \n Nombre de tentatives que vous avez fait est de ".concat(k));
+                                    console.log("Le nombre que vous avez saisi est trop petit ");
+                                        if(k == 5)
+                                        {
+                                            alert("GAME OVER ! Vous avez épuisé le nombre de tentative");
+                                            console.log("GAME OVER ! Vous avez épuisé le nombre de tentative");
+                                        }
+                                }
+                                
+                                else
+                                {
+                                    alert("Le nombre que avez saisi est trop grand \n Nombre de tentatives que vous avez fait est de ".concat(k));
+                                    console.log("Le nombre que avez saisi est trop grand ")
+                                        if(k == 5)
+                                        {
+                                                alert("GAME OVER ! Vous avez épuisé le nombre de tentative");
+                                                console.log("GAME OVER !");
+                                        }
+                                }
+                                break;
+                                }
+                                
+                                
+                                
+                              
+                            }
+                          
+                        }
+                                
+                            }else
+                            {
+                                
+                                if(valeur_saisi < hasard2)
+                                {
+                                    alert("Le nombre que vous avez saisi est trop petit \n Nombre de tentatives que vous avez fait est de ".concat(j));
+                                    console.log("Le nombre que vous avez saisi est trop petit ");
+                                        if(j == 5)
+                                        {
+                                            alert("GAME OVER ! Vous avez épuisé le nombre de tentative");
+                                            console.log("GAME OVER ! Vous avez épuisé le nombre de tentative");
+                                        }
+                                }
+                                
+                                else
+                                {
+                                    alert("Le nombre que avez saisi est trop grand \n Nombre de tentatives que vous avez fait est de ".concat(j));
+                                    console.log("Le nombre que avez saisi est trop grand ")
+                                        if(j == 5)
+                                        {
+                                                alert("GAME OVER ! Vous avez épuisé le nombre de tentative");
+                                                console.log("GAME OVER !");
+                                        }
+                                }
+                            }
+                        }
+                        
+
+                }
+                else
+                {
+                    
+                    if(valeur_saisi < hasard)
+                    {
+                        alert("Le nombre que vous avez saisi est trop petit \n Nombre de tentatives que vous avez fait est de ".concat(i));
+                        console.log("Le nombre que vous avez saisi est trop petit ");
+                            if(i == 5)
+                            {
+                                alert("GAME OVER ! Vous avez épuisé le nombre de tentative");
+                                console.log("GAME OVER ! Vous avez épuisé le nombre de tentative");
+                            }
+                    }
+                      
+                    else
+                    {
+                        alert("Le nombre que avez saisi est trop grand \n Nombre de tentatives que vous avez fait est de ".concat(i));
+                        console.log("Le nombre que avez saisi est trop grand ")
+                            if(i == 5)
+                            {
+                                    alert("GAME OVER ! Vous avez épuisé le nombre de tentative");
+                                    console.log("GAME OVER !");
+                            }
+                    }
+                }
+            }
+            
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
